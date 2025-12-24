@@ -1,4 +1,4 @@
-# 📦 Shipment NL Query
+#  Shipment NL Query
 
 A Streamlit-based application to query shipment data stored in MongoDB using **natural language**. Users can upload Excel files of shipment data, ingest them into MongoDB, and then ask plain-English questions like:
 
@@ -9,7 +9,7 @@ A Streamlit-based application to query shipment data stored in MongoDB using **n
 - Show shipments created in the last 7 days.
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 
@@ -30,7 +30,7 @@ shipment_nl_query/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 - Python 3.10+
 - MongoDB (local or remote)
@@ -51,7 +51,7 @@ python-dateutil
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 1. **Start MongoDB**
 
@@ -94,7 +94,7 @@ Examples:
 
 ---
 
-## 🧰 Features
+##  Features
 
 * **Dynamic Column Detection** – No hardcoding required
 * **Natural Language Queries** – Rule-based parsing of counts, sums, top N, and grouped aggregations
@@ -105,7 +105,7 @@ Examples:
 
 ---
 
-## 📌 Notes
+##  Notes
 
 * Date parsing uses `dateutil` and supports phrases like:
 
@@ -116,10 +116,3 @@ Examples:
 * Cost detection supports columns containing: `cost`, `amount`, `charge`, `price`
 * Ref-like fields (`ref`, `tracking`, `awb`) are used for unique shipment counts
 
----
-
-## 📝 License
-
-MIT License
-
----
