@@ -1,6 +1,4 @@
+streamlit
 pandas
 pymongo
-fastapi
-uvicorn
-streamlit
-openpyxl
+python-dateutil
