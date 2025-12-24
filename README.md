@@ -1,4 +1,3 @@
-```markdown
 # 📦 Shipment NL Query
 
 A Streamlit-based application to query shipment data stored in MongoDB using **natural language**. Users can upload Excel files of shipment data, ingest them into MongoDB, and then ask plain-English questions like:
@@ -8,7 +7,6 @@ A Streamlit-based application to query shipment data stored in MongoDB using **n
 - Provide a cost analysis of shipments grouped by status.
 - List the top 5 most expensive shipments.
 - Show shipments created in the last 7 days.
----
 ---
 
 ## 📁 Project Structure
