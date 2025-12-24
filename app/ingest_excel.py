@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Ingest an Excel file into MongoDB dynamically.
 
