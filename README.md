@@ -9,12 +9,12 @@ A Streamlit-based application to query shipment data stored in MongoDB using **n
 - List the top 5 most expensive shipments.
 - Show shipments created in the last 7 days.
 
+
 ---
 
 ## 📁 Project Structure
 
 ```
-
 shipment_nl_query/
 │
 ├── app/
@@ -28,9 +28,11 @@ shipment_nl_query/
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project instructions
 
-````
+---
 
 ---
+
+
 
 ## ⚙️ Requirements
 
