@@ -2,7 +2,7 @@
 Ingest an Excel file into MongoDB dynamically.
 
 Usage:
-  python ingest_excel.py --file data/shipment_data.xlsx --mongo-uri mongodb://localhost:27017 --db shipments_db --collection shipments
+  python app/ingest_excel.py --file data/shipment_data.xlsx --mongo-uri mongodb://localhost:27017 --db shipments_db --collection shipments
 
 If sheet_name is not provided, the first sheet is used.
 """
@@ -135,3 +135,4 @@ if __name__ == "__main__":
     parser.add_argument("--sheet-name", default=None)
     args = parser.parse_args()
     ingest(args.file, args.mongo_uri, args.db, args.collection, args.sheet_name)
+
