@@ -6,7 +6,7 @@ from nl_to_mongo import build_query
 import json
 
 st.set_page_config(page_title="Shipment NL Query", layout="wide")
-st.title("📦 Shipment Database — Natural Language Query")
+st.title(" Shipment Database — Natural Language Query")
 st.caption("Query shipment data using plain English")
 st.divider()
 
@@ -28,7 +28,7 @@ if mongo_uri and db_name and collection_name:
         st.sidebar.error(f"MongoDB connection failed: {e}")
 
 st.sidebar.divider()
-st.sidebar.header("📤 Ingest Excel")
+st.sidebar.header(" Ingest Excel")
 uploaded = st.sidebar.file_uploader("Upload Excel file", type=["xlsx", "xls"])
 if uploaded and connected and st.sidebar.button("⬆ Ingest Excel"):
     df = pd.read_excel(uploaded, dtype=object)
@@ -41,7 +41,7 @@ if uploaded and connected and st.sidebar.button("⬆ Ingest Excel"):
         st.sidebar.warning("No rows found in Excel")
 
 # ----------------- Main: Query UI -----------------
-st.subheader("🧠 Ask a Question")
+st.subheader(" Ask a Question")
 examples = [
     "How many shipments were created this month?",
     "Show total shipment cost for the current month",
@@ -55,7 +55,7 @@ for i, ex in enumerate(examples):
         st.session_state["query"] = ex
 
 query = st.text_area("Natural-language query", height=120, value=st.session_state.get("query", ""))
-run = st.button("▶ Run Query")
+run = st.button(" Run Query")
 
 # ----------------- Run the query and show results -----------------
 if run:
@@ -147,7 +147,7 @@ if run:
         else:
             df_res = pd.DataFrame(res)
             if agg["type"] == "sum":
-                st.metric("💰 Total (sum)", f"{df_res.iloc[0]['total']:.2f}")
+                st.metric(" Total (sum)", f"{df_res.iloc[0]['total']:.2f}")
             else:
                 st.dataframe(df_res, use_container_width=True)
         st.stop()
