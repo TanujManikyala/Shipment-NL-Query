@@ -1,0 +1,6 @@
+pandas
+pymongo
+fastapi
+uvicorn
+streamlit
+openpyxl
